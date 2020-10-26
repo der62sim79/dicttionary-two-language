@@ -1,0 +1,10 @@
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\bin\Debug\DictionaryTwoLanguage.exe.config
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\bin\Debug\DictionaryTwoLanguage.exe
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\bin\Debug\DictionaryTwoLanguage.pdb
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.csprojAssemblyReference.cache
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.Form1.resources
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.Properties.Resources.resources
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.csproj.GenerateResource.cache
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.csproj.CoreCompileInputs.cache
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.exe
+C:\Users\DCV\source\repos\DictionaryTwoLanguage\DictionaryTwoLanguage\obj\Debug\DictionaryTwoLanguage.pdb
