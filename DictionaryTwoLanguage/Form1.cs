@@ -48,6 +48,11 @@ namespace DictionaryTwoLanguage
             lBoxGermanWords.DataSource = germanToEnglishDictionary.Keys.ToList();
         }
 
+        private void UpdateAlphabet()
+        {
+            
+        }
+
         private void btnSearch_Click(object sender, EventArgs e)
         {
             var textSearch = tbSearch.Text;
@@ -86,7 +91,7 @@ namespace DictionaryTwoLanguage
                 var germanWord = result[i].ElementAt(0);
                 var englishWord = result[i].ElementAt(1);
                 var turkishWord = result[i].ElementAt(2);
-                if (!string.IsNullOrEmpty(germanWord) && !string.IsNullOrEmpty(englishWord))
+                if (!germanToEnglishDictionary.ContainsKey(germanWord) && !string.IsNullOrEmpty(englishWord))
                 {
                     germanToEnglishDictionary.Add(germanWord, new List<string> { englishWord, turkishWord });
                 }
@@ -97,6 +102,28 @@ namespace DictionaryTwoLanguage
         private void tbFindTR_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void tbSearcSort_TextChanged(object sender, EventArgs e)
+        {
+            var list = germanToEnglishDictionary.Where(x => x.Key.Contains(tbSearcSort.Text)).Select(x => x.Key).ToList();
+            lBoxGermanWords.DataSource = list;
+        }
+
+        private void lbAlphabet_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+            string curItem = lbAlphabet.SelectedItem.ToString();
+
+            var list = germanToEnglishDictionary.Where(x => x.Key.Contains(curItem)).Select(x => x.Key).ToList();
+            lBoxGermanWords.DataSource = list;
+
+            int index = lBoxGermanWords.FindString(curItem);
+
+            if (index == -1)
+                MessageBox.Show("Nicht vorhanden");
+            else
+                lBoxGermanWords.SetSelected(index, true);
         }
     }
 }

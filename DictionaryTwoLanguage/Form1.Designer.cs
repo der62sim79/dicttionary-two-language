@@ -44,6 +44,9 @@
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.tbSearcSort = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.lbAlphabet = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // tbGerman
@@ -84,7 +87,7 @@
             // 
             this.lBoxGermanWords.FormattingEnabled = true;
             this.lBoxGermanWords.ItemHeight = 16;
-            this.lBoxGermanWords.Location = new System.Drawing.Point(46, 347);
+            this.lBoxGermanWords.Location = new System.Drawing.Point(115, 347);
             this.lBoxGermanWords.Name = "lBoxGermanWords";
             this.lBoxGermanWords.Size = new System.Drawing.Size(495, 212);
             this.lBoxGermanWords.TabIndex = 4;
@@ -98,7 +101,7 @@
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(46, 274);
+            this.btnSearch.Location = new System.Drawing.Point(373, 219);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(188, 32);
             this.btnSearch.TabIndex = 6;
@@ -185,11 +188,67 @@
             this.label6.TabIndex = 15;
             this.label6.Text = "DE<>TR";
             // 
+            // tbSearcSort
+            // 
+            this.tbSearcSort.Location = new System.Drawing.Point(115, 316);
+            this.tbSearcSort.Name = "tbSearcSort";
+            this.tbSearcSort.Size = new System.Drawing.Size(358, 22);
+            this.tbSearcSort.TabIndex = 16;
+            this.tbSearcSort.TextChanged += new System.EventHandler(this.tbSearcSort_TextChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(112, 296);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(92, 17);
+            this.label7.TabIndex = 17;
+            this.label7.Text = "Schnellsuche";
+            // 
+            // lbAlphabet
+            // 
+            this.lbAlphabet.FormattingEnabled = true;
+            this.lbAlphabet.ItemHeight = 16;
+            this.lbAlphabet.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "F",
+            "G",
+            "H",
+            "I",
+            "J",
+            "K",
+            "L",
+            "M",
+            "N",
+            "O",
+            "P",
+            "Q",
+            "R",
+            "S",
+            "T",
+            "U",
+            "V",
+            "W",
+            "X",
+            "Y",
+            "Z"});
+            this.lbAlphabet.Location = new System.Drawing.Point(49, 347);
+            this.lbAlphabet.Name = "lbAlphabet";
+            this.lbAlphabet.Size = new System.Drawing.Size(51, 212);
+            this.lbAlphabet.TabIndex = 18;
+            this.lbAlphabet.SelectedIndexChanged += new System.EventHandler(this.lbAlphabet_SelectedIndexChanged);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1098, 650);
+            this.Controls.Add(this.lbAlphabet);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.tbSearcSort);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -231,6 +290,9 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox tbSearcSort;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.ListBox lbAlphabet;
     }
 }
 
